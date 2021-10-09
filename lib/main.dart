@@ -4,6 +4,7 @@ import 'package:flutter_food2/login/login_page.dart';
 import 'package:flutter_food2/main_pages/food_page.dart';
 import 'package:flutter_food2/main_pages/order_page.dart';
 import 'package:flutter_food2/main_pages/profile_page.dart';
+import 'package:flutter_food2/models/food_detail.dart';
 
 void main() {
   runApp(MyApp());
@@ -33,6 +34,7 @@ class MyApp extends StatelessWidget {
         FoodPage.routeName: (context) => const FoodPage(),
         ProfilePage.routeName: (context) => const ProfilePage(),
         OrderPage.routeName: (context) => const OrderPage(),
+        FoodDetailPage.routeName: (context) => const FoodDetailPage(),
       },
       initialRoute: LoginPage.routeName,
     );
